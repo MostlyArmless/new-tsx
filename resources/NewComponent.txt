@@ -1,0 +1,29 @@
+import * as React from 'react';
+
+interface NewComponentProps
+{
+
+}
+
+interface NewComponentState
+{
+
+}
+
+export class NewComponent extends React.Component<NewComponentProps, NewComponentState>
+{
+    constructor( props: NewComponentProps )
+    {
+        super( props );
+
+    }
+
+    render()
+    {
+        return (
+            <>
+                New Component!
+            </>
+        );
+    }
+}
