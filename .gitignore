@@ -1,5 +1,2 @@
 # Ignore node_modules anywhere in the directory tree
 **/node_modules/
-# Ignore the outputs of tsc
-/build/
-# Ignore ./src/components, since that's where the tool puts new components while I'm testing
