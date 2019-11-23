@@ -1,12 +1,13 @@
 {
   "name": "new-tsx",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create new TypeScrpt React component files from the command line.",
   "main": "./build/main.js",
   "bin": {
     "new-tsx": "./build/main.js"
   },
   "scripts": {
+    "prepublish": "tsc",
     "start": "node ./build/main.js",
     "test": "mocha --watch"
   },
