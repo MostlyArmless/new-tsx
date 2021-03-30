@@ -4,7 +4,7 @@
   "description": "Create new TypeScrpt React component files from the command line.",
   "main": "./build/main.js",
   "bin": {
-    "new-tsx": "./build/main.js"
+    "new-tsx": "./build/src/main.js"
   },
   "scripts": {
     "prepublish": "tsc",
