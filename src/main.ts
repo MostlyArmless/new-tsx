@@ -3,6 +3,9 @@ import * as fse from 'fs-extra';
 import * as path from 'path';
 
 const componentName = process.argv[2];
+const funcOrClassArg = process.argv[3];
+const funcOrClass = funcOrClassArg === 'f' ? "Func" : "Class";
+
 if ( !componentName )
 {
     console.error( "No component name provided." );
@@ -17,8 +20,7 @@ if ( fse.existsSync( newComponentPath ) )
     process.exit( -1 );
 }
 
-// let packageDir = path.join( process.cwd(), componentName );
-const templateFile = path.join( __dirname, '../resources/NewComponent.txt' );
+const templateFile = path.join( __dirname, `../resources/NewComponent${funcOrClass}.ts` );
 
 // Replace the component name in template file
 let templateFileContents = fse.readFileSync( templateFile ).toString();
